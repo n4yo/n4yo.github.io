@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="ti">Mi Portafolio</h1>
+        <p>Portafolio para mejor conocimiento:</p>
+    </header>
+    <main>
+        <div id="cambioMovimiento">
+            <p id="cambioParrafo">Soy programadora</p>
+
+            <script>
+                const listaParrafos = ["Soy programadora", "Soy diseñadora", "Soy desarrolladora"];
+
+                let cambioS = 0;
+
+                setInterval(function() {
+                    document.getElementById("cambioParrafo").innerText = listaParrafos[cambioS];
+
+                    cambioS = (cambioS + 1)%listaParrafos.length;
+                }, 5000);
+
+            </script>
+        </div>
+        <div>
+            <div class="parent">
+                <div class="divImg">  <img src="miFotoPortafolio.png.png" alt=""> </div>
+                <div class="div2"> <p class="p">Soy Nayara Kate Hurtado Barja, tengo </p>
+                <p class="p">19 años , estudio en la Universidad del Valle </p>
+                <p class="p"> la carrera de ingeniería en sistemas</p>
+                 <p class="p"> mis hobbies incluyen leer, escuchar música y dibujar.</p>
+ 
+                </div>
+            </div>
+        </div>   
+        <div>
+            <h2>Manejo de habilidades</h2>
+            <h4>manejo de lenguajes en programacion</h4>
+        </div>
+        <div>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>c#</th>
+                        <th>JavaScript</th>
+                        <th>HTML</th>
+                    </tr>
+                    <tr>
+                        <th>Psint</th>
+                        <th>Python</th>
+                        <th>Bootstrap 4</th>
+                    </tr>
+                </thead>
+           </table>
+        </div>
+
+    </main>
+    <footer>
+        <h6>UNIVERSIDAD DEL VALLE - PROGRAMACION WEB 2DO SEMESTRE 2024</h6>
+    </footer>
+</body>
+</html>
